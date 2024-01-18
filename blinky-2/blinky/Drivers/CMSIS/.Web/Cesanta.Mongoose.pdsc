@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package schemaVersion="1.4" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
+  <vendor>Cesanta</vendor>
+  <name>Mongoose</name>
+  <description>Mongoose Embedded Web server, HTTP/MQTT/Websocket library</description>
+  <url>https://mongoose.ws/downloads/armpack/</url>
+  <supportContact>https://mongoose.ws/contact/</supportContact>
+  <license>License.txt</license>
+  <releases>
+    <release version="7.8.0" date="2022-08-28">
+      See https://github.com/cesanta/mongoose/releases/tag/7.8
+    </release>
+  </releases>
+
+  <keywords>
+    <!-- keywords for indexing -->
+    <keyword>Web Server</keyword>
+    <keyword>HTTP</keyword>
+    <keyword>MQTT</keyword>
+    <keyword>SNTP</keyword>
+    <keyword>Websocket</keyword>
+    <keyword>network</keyword>
+  </keywords>
+
+  <components>
+    <bundle Cbundle="Cesanta" Cclass="Network" Cversion="7.8.0">
+      <description>Mongoose HTTP/MQTT/Websocket Library</description>
+      <doc>https://mongoose.ws/documentation/</doc>
+
+    <component Cgroup="Mongoose">
+      <description>Mongoose</description>
+      <files>
+        <file category="header" name="Mongoose/mongoose.h"/>
+        <file category="source" name="Mongoose/mongoose.c"/>
+      </files>
+    </component>
+
+    </bundle>
+  </components>
+
+
+</package>
